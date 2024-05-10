@@ -18,7 +18,7 @@ module.exports = {
         allowNull:false,
         unique:true,
       },
-      password_hast:{
+      password_hash:{
         type:Sequelize.STRING,
         allowNull:false,
 
@@ -41,7 +41,7 @@ module.exports = {
   },
 
   async down(queryInterface) {
-    await queryInterface.dropTable('user');
+    await queryInterface.dropTable('users');
 
   },
 };

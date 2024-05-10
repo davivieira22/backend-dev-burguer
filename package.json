@@ -6,7 +6,8 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.3",
     "uuid": "^9.0.1",
-    "yarn": "^1.22.22"
+    "yarn": "^1.22.22",
+    "yup": "^1.4.0"
   },
   "name": "backend-dev-burguer",
   "version": "1.0.0",
