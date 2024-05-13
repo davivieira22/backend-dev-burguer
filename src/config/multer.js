@@ -1,6 +1,6 @@
 
 import Multer from 'multer';
-import {extname,resolve} from 'node:path';
+import {extname,resolve} from 'path';
 import { v4 } from 'uuid';
 
 export default {
