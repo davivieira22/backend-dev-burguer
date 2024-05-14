@@ -1,20 +1,20 @@
-import Sequelize, { Model } from 'sequelize';
+import Sequelize, { Model } from "sequelize";
 
-class Product extends Model {
-    static init(sequelize) {
+class Product extends Model{
+  static init(sequelize){
         super.init({
-            name: Sequelize.STRING,
-            price: Sequelize.INTEGER,
-            category: Sequelize.STRING,
-            path: Sequelize.STRING,
+            name:Sequelize.STRING,
+            price:Sequelize.INTEGER,
+            category:Sequelize.STRING,
+            path:Sequelize.STRING,
 
 
         },
-            {
-                sequelize,
-            }
-        );
+    {
+        sequelize,
 
+    }
+   );
 
     }
 }

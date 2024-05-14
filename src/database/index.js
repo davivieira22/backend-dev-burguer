@@ -4,6 +4,7 @@ import User from '../app/models/User';
 import Product from '../app/models/product';
 
 const models=[User,Product];
+
  class Database{
     constructor(){
 
