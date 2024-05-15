@@ -5,10 +5,10 @@ import { v4 } from 'uuid';
 
 export default {
     storage:Multer.diskStorage({
-        destination: resolve(__dirname,'..','..','uploads'),
+        destination: resolve(__dirname,'..','..','Uploads'),
         filename:( request,file,callback)=>
          callback(null,v4() + extname(file.originalname))
              
 
-    })
-}
+    }),
+};

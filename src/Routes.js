@@ -8,11 +8,12 @@ import MulterConfig from "./config/multer"
 
 const routes = new Router();
 
-const upload =Multer(MulterConfig)
+const Upload =Multer(MulterConfig)
 
  routes.post('/users', UserController.store);
- routes.post('/sessio',SessionController.store);
- routes.post('/products',upload.single('file'),ProductController.store);
+ routes.post('/session',SessionController.store);
+ routes.post('/products',Upload.single('file'),ProductController.store);
+routes.get('/products',ProductController.index)
 
-
+ 
 export default routes;  

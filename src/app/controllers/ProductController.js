@@ -16,24 +16,29 @@ class PrductController {
          return response.status(400).json({ error: err.errors });
       };
 
-      const { Filename: path } = request.file;
+      const { Filename: Path } = request.file;
       const { name, price, category } = request.body;
 
       const product = await Product.create({
          name,
          price,
          category,
-         path,
-      
-      })
+         Path,
+
+
+      }); return response.status(200).json(product)
+
+
+   }
 
 
 
+   async index(request,response) {
+      const products = await Product.findAll();
+      return response.json(products);
 
-
-
-      return response.status(200).json(product )
    }
 }
+
 
 export default new PrductController();
