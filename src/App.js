@@ -10,10 +10,9 @@ class App {
         this.routes();
     }
     middlewares() {
-        this.app.use(express.json())
+        this.app.use(express.json());
         this.app.use(
-            '/prduct-file',
-            express.static(resolve(__dirname,'..','Uploads')),
+            '/prduct-file',express.static(resolve(__dirname,'..','Uploads')),
         );
     }
     routes() {
