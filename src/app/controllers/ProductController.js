@@ -2,7 +2,7 @@ import *as Yup from 'yup';
 import Product from '../models/product';
 
 
-class PrductController {
+class ProductController {
    async store(request, response) {
 
       const schema = Yup.object({
@@ -39,4 +39,4 @@ class PrductController {
 }
 
 
-export default new PrductController();
+export default new ProductController();
