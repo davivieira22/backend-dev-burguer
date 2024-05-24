@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import authConfig from '../config/auth'
+import authConfig from '../../config/auth'
 
 
 
@@ -18,7 +18,7 @@ const authMiddleware = (request, response, next) => {
             }
 
             request.userId = decoded.id;
-
+            request.userName = decoded.name;
         });
     } catch (err) {
         return response.status(401).json({ error: 'token invalido ' })
