@@ -1,6 +1,4 @@
-import mongoose from 'mongoose';
-
-
+import mongoose from "mongoose";
 
 
 const OrderSchema = new mongoose.Schema({
@@ -18,35 +16,36 @@ const OrderSchema = new mongoose.Schema({
     },
     products: [
         {
-        id: {
-            type: Number,
-            required: true,
+            id: {
+                type: Number,
+                required: true,
 
-        },
-        name: {
-            type: String,
-            required: true,
-        },
-        price: {
-            type: Number,
-            required: true,
+            },
+            name: {
+                type: String,
+                required: true,
+            },
+            price: {
+                type: Number,
+                required: true,
 
-        },
-        category: {
-            type: String,
-            required: true,
+            },
+            category: {
+                type: String,
+                required: true,
 
-        },
-        url: {
-            type: String,
-            required: true,
+            },
+            url: {
+                type: String,
+                required: true,
 
+            },
+            quantity: {
+                type: String,
+                required: true,
+            }
         },
-        quantity: {
-            type: String,
-            required: true,
-        }
-    }],
+    ],
     status: {
         type: String,
         required: true,
@@ -55,7 +54,8 @@ const OrderSchema = new mongoose.Schema({
 },
     {
         timestamps: true,
-    },);
+    },
+);
 
 
 export default mongoose.model('Order', OrderSchema);
