@@ -41,7 +41,7 @@ where:{
 });   
 
 if(UserExists){
- return response.status(400).
+ return response.status(409).
  json({erro:'esse usuario ja extiste '})
 }
 
